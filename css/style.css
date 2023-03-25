@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.background_admin{
+    background-color: gray;
+    padding:15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.background_admin p{
+    text-align: center;
+    font-size: 30px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.menu li{
+    list-style: none;
+    padding: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 25px 15px;
+}
+.menu li:hover{
+    background-color: gray;
+    border-radius: 10px;
+}
+.menu a:hover{
+    color: black;
+    
+}
