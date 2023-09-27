@@ -17,7 +17,9 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="index.php?act=addsp">Product</a></li>
         <li><a href="index.php?act=adddm">Category</a></li>
-        <li><a href="index.php?act=addac">Account</a></li>
+        <li><a href="index.php?act=addcl">Color</a></li>
+        <li><a href="index.php?act=addsz">Size</a></li>
         <li><a href="index.php?act=addcm">Comment</a></li>
+        <li><a href="index.php?act=addbill">Bill</a></li>
         <li><a href="index.php?act=thongke">Thống kê</a></li>
    </div>

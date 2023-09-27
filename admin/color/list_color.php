@@ -49,18 +49,18 @@
     <h1>Danh sách loại hàng</h1>
     <table border=1>
         <tr>
-            <th>Mã danh mục</th>
-            <th>Tên danh mục</th>
+            <th>Mã màu sắc</th>
+            <th>Tên màu sắc</th>
         </tr>
         <?php
-            foreach($listdanhmuc as $danhmuc){
-                extract($danhmuc);
-                $suadm="index.php?act=suadm&id=".$id_category;
-                $xoadm="index.php?act=xoadm&id=".$id_category;
+            foreach($listmausac as $mausac){
+                extract($mausac);
+                $suams="index.php?act=suams&id=".$id_color;
+                $xoams="index.php?act=xoams&id=".$id_color;
                 echo '<tr>
-                <th>'.$id_category.'</th>
-                <th>'.$name.'</th>
-                <th><a href="'.$suadm.'"><input type="button" value="Sửa"></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></th>
+                <th>'.$id_color.'</th>
+                <th>'.$name_color.'</th>
+                <th><a href="'.$suams.'"><input type="button" value="Sửa"></a> <a href="'.$xoams.'"><input type="button" value="Xóa"></a></th>
                 </tr>';
             }
         ?>

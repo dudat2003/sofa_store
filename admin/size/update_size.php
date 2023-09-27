@@ -13,11 +13,11 @@
 </head>
 <body>
 <h1>Sửa danh mục</h1>
-        <form action="index.php?act=updatedm" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="id" value="<?php if(isset($id_category)&&($id_category>0)) echo $id_category; ?>">
-        <p>Tên sản phẩm</p> <input type="text" name="name" value="<?php if(isset($name)&&($name!="")) echo $name; ?>"> <br><br>
+        <form action="index.php?act=updatesz" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php if(isset($id_size)&&($id_size>0)) echo $id_size; ?>">
+        <p>Kích thước</p> <input type="text" name="name" value="<?php if(isset($size)&&($size!="")) echo $size; ?>"> <br><br>
         <input type="submit" name="btn_capnhat" value="Cập nhật">
-        <a href="index.php?act=listdm"><input type="button" value="Danh sách"></a>
+        <a href="index.php?act=listsz"><input type="button" value="Danh sách"></a>
         <?php
             if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
         ?>

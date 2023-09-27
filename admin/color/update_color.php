@@ -13,9 +13,9 @@
 </head>
 <body>
 <h1>Sửa danh mục</h1>
-        <form action="index.php?act=updatedm" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="id" value="<?php if(isset($id_category)&&($id_category>0)) echo $id_category; ?>">
-        <p>Tên sản phẩm</p> <input type="text" name="name" value="<?php if(isset($name)&&($name!="")) echo $name; ?>"> <br><br>
+        <form action="index.php?act=updatems" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php if(isset($id_color)&&($id_color>0)) echo $id_color; ?>">
+        <p>Tên sản phẩm</p> <input type="text" name="name" value="<?php if(isset($name_color)&&($name_color!="")) echo $name_color; ?>"> <br><br>
         <input type="submit" name="btn_capnhat" value="Cập nhật">
         <a href="index.php?act=listdm"><input type="button" value="Danh sách"></a>
         <?php

@@ -46,28 +46,30 @@
 </head>
 
 <body>
-    <h1>Danh sách loại hàng</h1>
     <table border=1>
         <tr>
-            <th>Mã danh mục</th>
-            <th>Tên danh mục</th>
+            <th>Mã bình luận</th>
+            <th>Tên Người dùng</th>
+            <th>Email người dùng</th>
+            <th>Nội dung bình luận</th>
+            <th>ngày bình luận</th>
         </tr>
         <?php
-            foreach($listdanhmuc as $danhmuc){
-                extract($danhmuc);
-                $suadm="index.php?act=suadm&id=".$id_category;
-                $xoadm="index.php?act=xoadm&id=".$id_category;
+            foreach($listbinhluan as $binhluan){
+                extract($binhluan);
+                $xoabl="index.php?act=xoabl&id=".$id_comment;
                 echo '<tr>
-                <th>'.$id_category.'</th>
+                <th>'.$id_comment.'</th>
                 <th>'.$name.'</th>
-                <th><a href="'.$suadm.'"><input type="button" value="Sửa"></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></th>
+                <th>'.$email.'</th>
+                <th>'.$contend.'</th>
+                <th>'.$date.'</th>
+                <th> <a href="'.$xoabl.'"><input type="button" value="Xóa"></a></th>
                 </tr>';
             }
         ?>
     </table>
     <br>
-    <div>
-        <a href="index.php?act=adddm"><input type="button" value="nhập thêm"></a>
-    </div>
+   
 </body>
 </html>

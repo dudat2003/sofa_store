@@ -46,21 +46,21 @@
 </head>
 
 <body>
-    <h1>Danh sách loại hàng</h1>
+    <h1>Danh sách các loại size</h1>
     <table border=1>
         <tr>
-            <th>Mã danh mục</th>
-            <th>Tên danh mục</th>
+            <th>Mã size</th>
+            <th>Tên size</th>
         </tr>
         <?php
-            foreach($listdanhmuc as $danhmuc){
-                extract($danhmuc);
-                $suadm="index.php?act=suadm&id=".$id_category;
-                $xoadm="index.php?act=xoadm&id=".$id_category;
+            foreach($listkichthuoc as $kichthuoc){
+                extract($kichthuoc);
+                $suasz="index.php?act=suasz&id=".$id_size;
+                $xoasz="index.php?act=xoasz&id=".$id_size;
                 echo '<tr>
-                <th>'.$id_category.'</th>
-                <th>'.$name.'</th>
-                <th><a href="'.$suadm.'"><input type="button" value="Sửa"></a> <a href="'.$xoadm.'"><input type="button" value="Xóa"></a></th>
+                <th>'.$id_size.'</th>
+                <th>'.$size.'</th>
+                <th><a href="'.$suasz.'"><input type="button" value="Sửa"></a> <a href="'.$xoasz.'"><input type="button" value="Xóa"></a></th>
                 </tr>';
             }
         ?>
